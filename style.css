@@ -2,17 +2,45 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
     text-align: center;
-    padding: 50px;
 }
 
 h1 {
     color: #007bff;
+    margin-bottom: 20px;
 }
 
-p {
-    font-size: 18px;
-    margin-bottom: 20px;
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 button {
@@ -23,8 +51,14 @@ button {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
+    width: 100%;
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 14px;
 }
