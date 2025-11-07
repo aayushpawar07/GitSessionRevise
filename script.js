@@ -1,4 +1,15 @@
-document.getElementById('changeTextBtn').addEventListener('click', function() {
-    const paragraph = document.querySelector('p');
-    paragraph.textContent = 'The text has been changed! Thanks for clicking.';
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const message = document.getElementById('message');
+
+    // Simple validation (for demo purposes)
+    if (username === 'admin' && password === 'password') {
+        message.textContent = 'Login successful!';
+        message.style.color = 'green';
+    } else {
+        message.textContent = 'Invalid username or password.';
+        message.style.color = 'red';
+    }
 });
