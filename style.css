@@ -28,6 +28,22 @@ h1 {
     text-align: left;
 }
 
+.remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 8px;
+    width: auto;
+}
+
+.remember-me label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
 label {
     display: block;
     margin-bottom: 5px;
@@ -61,4 +77,16 @@ button:hover {
 #message {
     margin-top: 15px;
     font-size: 14px;
+}
+
+#forgotPassword {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#forgotPassword:hover {
+    text-decoration: underline;
 }
